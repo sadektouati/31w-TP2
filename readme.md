@@ -16,5 +16,3 @@ Lien (https://github.com/sadektouati/2022-31w-TP2/tree/tp2)
 
 Pour plus d'information sur la conception de thème
 [WP developper guide](https://developper.wordpress.org/theme)
-
-C'est un travail original
