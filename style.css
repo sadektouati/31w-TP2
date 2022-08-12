@@ -626,6 +626,7 @@ textarea {
   grid-area: main;
   overflow: hidden;
   /* Resolves issue with <pre> elements forcing full width. */
+  background-color: #fffbf5;
 }
 
 .site__main > * + * {
@@ -641,6 +642,17 @@ textarea {
   color: gray;
   border-bottom: 1px solid;
   font-size: 1.75rem;
+}
+
+.site__main h2 a {
+  text-decoration: none;
+  color: orangered;
+  font-family: arial;
+}
+
+.site__main h3 {
+  font-size: 1.25rem;
+  color: gray;
 }
 
 .site__main p {
@@ -659,6 +671,11 @@ textarea {
 
 .site__main .button:hover {
   color: #191970;
+}
+
+.site__main .image_article {
+  margin: 2rem auto;
+  display: block;
 }
 
 .site__sidebar {

@@ -46,6 +46,7 @@
 .site__main {
 	grid-area: main;
 	overflow: hidden; /* Resolves issue with <pre> elements forcing full width. */
+	background-color: #fffbf5;
 
 	> * + *{
 	margin-top: 1rem;
@@ -56,12 +57,23 @@
 	}
 
 	h2 {
-	margin-top: 3rem;
-	color: gray;
-	border-bottom: 1px solid;
-	font-size: 1.75rem;
+		margin-top: 3rem;
+		color: gray;
+		border-bottom: 1px solid;
+		font-size: 1.75rem;
+
+		a{
+			text-decoration: none;
+			color: orangered;
+			font-family: arial;
+		}
 	}
 
+	h3 {
+		font-size: 1.25rem;
+		color: gray;
+	}
+		
 	p {
 	font-size: 1.1rem;
 	line-height: 1.5;
@@ -80,6 +92,10 @@
 	color: $color__link-hover;
 	}
 
+	.image_article{
+		margin: 2rem auto;
+		display: block;
+	}
 }
 
 
