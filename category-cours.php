@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 
 <section class="site__main">
-    <h1>category-cours.php</h1>
+    <h1>Liste de cours</h1>
     <?php
     if (have_posts()):
         while(have_posts()) : the_post(); ?>
