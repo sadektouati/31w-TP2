@@ -14,10 +14,11 @@
 				"sidebar main"
 				"footer footer";
 		}
-}
 
-.site > * {
-	padding: 2rem;
+		> * {
+			padding: 2rem;
+		}
+		
 }
 
 
@@ -44,31 +45,36 @@
 .site__main {
 	grid-area: main;
 	overflow: hidden; /* Resolves issue with <pre> elements forcing full width. */
-}
-.site__main > * + *{
-	margin-top: 1rem;
-}
 
-.site__main h2 {
+	> * + *{
+	margin-top: 1rem;
+	}
+
+	h2 {
 	margin-top: 3rem;
 	color: gray;
 	border-bottom: 1px solid;
 	font-size: 1.75rem;
-}
-.site__main p {
+	}
+
+	p {
 	font-size: 1.1rem;
 	line-height: 1.5;
-}
-.site__main p + p{
-	margin-top: 2rem;
-}
+	}
 
-.site__main .button {
+	p + p{
+	margin-top: 2rem;
+	}
+
+	.button {
 	margin-inline-start: .75rem;
 	color: $color__link;
-}
-.site__main .button:hover {
+	}
+
+	.button:hover {
 	color: $color__link-hover;
+	}
+	
 }
 
 
