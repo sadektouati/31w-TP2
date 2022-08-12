@@ -1,11 +1,13 @@
-# TP - 1
-## thème et plugin  Wordpress
+# Exe - 4
+## thème Wordpress
 ### Contient plusieurs commits
 
-Lien (https://github.com/sadektouati/31w/tree/tp1)
+Lien (https://github.com/sadektouati/w31/tree/tp2)
 
-> Le thème conient 5 fichiers et le readme file:
+> Le thème conient 8 fichiers et le readme file:
 index.php
+404.php
+category-cours.php
 style.css
 functions.php
 header.php
