@@ -24,21 +24,22 @@
 .site__header {
 	grid-area: header;
 	padding-inline: 3rem;
+
+	&  > * + * {
+		margin-top: 1rem;
+	}
+
+	a {
+		color: orangered;
+	}
+
+	h2 {
+		margin-top: 1rem;
+		border-bottom: 2px solid orangered;
+		color: gray;
+	}
 }
 
-.site__header > * + * {
-	margin-top: 1rem;
-}
-
-.site__header a {
-	color: orangered;
-}
-
-.site__header h2 {
-	margin-top: 1rem;
-	border-bottom: 2px solid orangered;
-	color: gray;
-}
 
 .site__main {
 	grid-area: main;
