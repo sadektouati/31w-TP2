@@ -1,0 +1,93 @@
+/*! 
+Theme Name: 31W-cours-1 
+Author: Saddek Touati
+Author URI: http://github.com/sadektouati
+Description: Thème de base pour mon cours de 31W
+Version: 1.0.0
+Tested up to: 5.4
+Requires PHP: 5.4
+License: GNU General Public License v2 or later
+License URI: LICENSE
+Text Domain: 31-w
+*/
+
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+# variable
+	- couleur
+	- police
+	- dimension
+
+# Generic
+	- Normalize
+	- Box sizing
+# Base
+	- Typography
+	- Elements
+	- Links
+	- Forms
+## Layout
+# Composents
+	- Navigation
+	- Posts and pages
+	- Widgets
+	- Media
+	- Galleries
+# plugins
+	- 
+# Utilities
+	- Accessibility
+	- Alignments
+
+--------------------------------------------------------------*/
+
+/* variable
+--------------------------------------------- */
+@import "variable/typography";
+@import "variable/dimension";
+@import "variable/colors";
+
+
+/*--------------------------------------------------------------
+# Generic
+--------------------------------------------------------------*/
+
+/* Normalize
+--------------------------------------------- */
+@import "generic/normalize";
+
+/* Box sizing
+--------------------------------------------- */
+@import "generic/box-sizing";
+
+/*--------------------------------------------------------------
+# Base
+--------------------------------------------------------------*/
+@import "base/base";
+
+
+/*--------------------------------------------------------------
+# Base
+--------------------------------------------------------------*/
+@import "layout/_sidebar-content";
+
+
+
+// body{
+// 	padding: 2rem;
+// }
+
+// .button{
+// 	font-style: italic;
+//     color: #ec407a;
+// }
+
+// .site{
+// 	border: 1px solid;
+//     padding: 1rem;
+//     border-radius: 1rem;
+// 	*+*{
+// 		margin-top: 2rem;
+// 	}
+// }
