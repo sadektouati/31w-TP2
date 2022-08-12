@@ -2,7 +2,7 @@
 ## thème Wordpress
 ### Contient plusieurs commits
 
-Lien (https://github.com/sadektouati/w31/tree/tp2)
+Lien (https://github.com/sadektouati/2022-31w-TP2/tree/tp2)
 
 > Le thème conient 8 fichiers et le readme file:
   index.php
