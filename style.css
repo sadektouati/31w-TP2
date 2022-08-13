@@ -674,6 +674,7 @@ textarea {
 }
 
 .site__main .image_article {
+  max-width: 40rem;
   margin: 2rem auto;
   display: block;
 }
