@@ -18,31 +18,28 @@
     <section class="site">
         <header class="site__header">
             <section class="site__branding">
-               <h1>
-                   <a href="<?= esc_url( home_url( '/' ) ); ?>"><?= bloginfo( 'name' ); ?></a>
-               </h1>
-               <h2><?= bloginfo( 'description' ); ?></h2>
+                <h1>
+                    <a href="<?= esc_url( home_url( '/' ) ) ?>"><?= bloginfo( 'name' ); ?></a>
+                </h1>
+                <h2>
+                <?= bloginfo( 'description' ); ?>
+                </h2>
             </section>
             <nav class="site__navigation">
-            Le menu va etre generer par worpress
+            Menu
             </nav>
         </header>
         <section class="site__sidebar">
 
-            <h3>contenu pertinent</h3>
 
+            <input type="checkbox" name="chk-burger" id="chk-burger">
+            <label for="chk-burger" id="burger">
+                <img src="https://s2.svgbox.net/hero-solid.svg?ic=menu&color=000000" width="32" height="32">
+            </label>
             <?php wp_nav_menu(array(
                         'menu' => 'menu sidebar',
                         'container' => 'nav',
                         'container_class' => 'menu__sidebar',
                         'menu_class' => 'menu__sidebar__ul'
             )) ?>
-    
-            <h3>Un sous titre</h3>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae omnis sed totam deleniti quasi quam reprehenderit mollitia tempora consequuntur eius. Libero necessitatibus tempora dicta nam repellendus, nemo consectetur officiis deleniti.
-            </p>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae omnis sed totam deleniti quasi quam reprehenderit mollitia tempora consequuntur eius. Libero necessitatibus tempora dicta nam repellendus, nemo consectetur officiis deleniti.
-            </p>
         </section>

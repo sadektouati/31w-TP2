@@ -1,19 +1,36 @@
 .blocs__horizontaux {
-    display : flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-}
+    gap: 2rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(18rem, 25rem));
+    
+    article {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        border: 1px solid #aaa;
+        border-radius: 1rem;
+        overflow: hidden;
 
-.blocs__horizontaux article {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    height : 300px;
-    border : 1px solid #aaa;
-    flex-basis : 50%;
-    @media screen and (min-width : 700px){
-        flex-basis : 22%;
+    h2{
+        margin-top: 0;
+    text-align: center;
+    padding: 1rem;
     }
+    h3{
+        padding: 0.5rem;
+    }
+    img{
+        display: block;
+        height: 15rem;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    p{
+        padding: 0.2rem 1rem;
+    font-size: 1em;
+    background-color: #efece6;
+    }
+
+}
 }

@@ -15,7 +15,6 @@
                 <?php endif; ?>
                 <p><?php the_field('resume'); ?></p>
                 </div>
-                <p><?php the_field('resume'); ?></p>
             </article>
             <?php endwhile; ?>
         <?php endif; ?>   
