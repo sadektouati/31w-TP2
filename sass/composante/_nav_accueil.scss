@@ -8,9 +8,17 @@
 }
 
 .menu-accueil-container .menu{
-    display : flex;
+    display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    padding: 2rem;
+    margin: 0;
+    background-color: rebeccapurple;
+    gap: 2rem;
+
+    @media screen and (min-width: 600px) {
+        flex-flow: row;
+    }
 }
 
 .menu-accueil-container .menu .menu-item {

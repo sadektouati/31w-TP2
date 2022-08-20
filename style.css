@@ -674,6 +674,16 @@ textarea {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  padding: 2rem;
+  margin: 0;
+  background-color: rebeccapurple;
+  gap: 2rem;
+}
+
+@media screen and (min-width: 600px) {
+  .menu-accueil-container .menu {
+    flex-flow: row;
+  }
 }
 
 .menu-accueil-container .menu .menu-item {
