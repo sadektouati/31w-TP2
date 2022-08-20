@@ -1,9 +1,9 @@
 @charset "UTF-8";
 /*! 
-Theme Name: 2022-31w TP2 
-Author: Saddek Touati
-Author URI: http://github.com/sadektouati
-Description: Thème de l'exercice 4
+Theme Name: 31W-cours 
+Author: Eddy Martin
+Author URI: http://github.com/eddytuto
+Description: Thème de base pour le cours de 31W
 Version: 1.0.0
 Tested up to: 5.4
 Requires PHP: 5.4
@@ -28,7 +28,7 @@ Text Domain: 31-w
 	- Links
 	- Forms
 ## Layout
-# Composents
+# Composent
 	- Navigation
 	- Posts and pages
 	- Widgets
@@ -582,7 +582,128 @@ textarea {
 }
 
 /*--------------------------------------------------------------
-# Base
+# Composante
+--------------------------------------------------------------*/
+#burger {
+  display: block;
+  position: absolute;
+  top: 50px;
+  left: 0;
+  z-index: 100;
+  transform: rotate(0deg);
+  transition: transform .5s;
+}
+
+@media screen and (min-width: 700px) {
+  #burger {
+    display: none;
+  }
+}
+
+.menu__sidebar {
+  position: absolute;
+  padding-top: 75px;
+  width: 100vw;
+  z-index: 99;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  transform: translateX(-100vw);
+  transition: transform .5s;
+}
+
+@media screen and (min-width: 700px) {
+  .menu__sidebar {
+    position: static;
+    width: 100%;
+    transform: translateX(0vw);
+  }
+}
+
+#chk-burger {
+  display: none;
+}
+
+#chk-burger:checked ~ .menu__sidebar {
+  transform: translateX(0);
+}
+
+#chk-burger:checked ~ #burger {
+  transform: rotate(90deg);
+}
+
+.menu__sidebar__ul {
+  list-style-type: none;
+  margin: 0;
+  padding: .4rem 0;
+}
+
+.menu__sidebar__ul .menu-item {
+  margin: .5rem 0;
+}
+
+.menu__sidebar__ul .menu-item a {
+  padding: .5rem;
+  line-height: 1.5rem;
+}
+
+.menu__sidebar__ul .menu-item a:hover {
+  background-color: black;
+}
+
+/**
+* block menu de la page d'accueil
+*/
+.menu-accueil-container {
+  margin-top: 50px;
+}
+
+.menu-accueil-container .menu {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.menu-accueil-container .menu .menu-item {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  border: 1px solid #aaa;
+  width: 30%;
+  padding: 1.5rem;
+}
+
+.menu-accueil-container .menu .menu-item a {
+  text-decoration: none;
+}
+
+.blocs__horizontaux {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.blocs__horizontaux article {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 300px;
+  border: 1px solid #aaa;
+  flex-basis: 50%;
+}
+
+@media screen and (min-width: 700px) {
+  .blocs__horizontaux article {
+    flex-basis: 22%;
+  }
+}
+
+/*--------------------------------------------------------------
+
+/*--------------------------------------------------------------
+# Layout
 --------------------------------------------------------------*/
 .site {
   display: grid;

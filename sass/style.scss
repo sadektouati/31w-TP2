@@ -1,8 +1,8 @@
 /*! 
-Theme Name: 2022-31w TP2 
-Author: Saddek Touati
-Author URI: http://github.com/sadektouati
-Description: Thème de l'exercice 4
+Theme Name: 31W-cours 
+Author: Eddy Martin
+Author URI: http://github.com/eddytuto
+Description: Thème de base pour le cours de 31W
 Version: 1.0.0
 Tested up to: 5.4
 Requires PHP: 5.4
@@ -28,7 +28,7 @@ Text Domain: 31-w
 	- Links
 	- Forms
 ## Layout
-# Composents
+# Composent
 	- Navigation
 	- Posts and pages
 	- Widgets
@@ -65,29 +65,16 @@ Text Domain: 31-w
 # Base
 --------------------------------------------------------------*/
 @import "base/base";
-
+/*--------------------------------------------------------------
+# Composante
+--------------------------------------------------------------*/
+@import "composante/nav_sidebar"; // navigation sidebar
+@import "composante/nav_accueil"; // navigation accueil
+@import "composante/blocs__horizontaux"; // navigation sidebar
+/*--------------------------------------------------------------
 
 /*--------------------------------------------------------------
-# Base
+# Layout
 --------------------------------------------------------------*/
-@import "layout/_sidebar-content";
+@import "layout/sidebar-content";
 
-
-
-// body{
-// 	padding: 2rem;
-// }
-
-// .button{
-// 	font-style: italic;
-//     color: #ec407a;
-// }
-
-// .site{
-// 	border: 1px solid;
-//     padding: 1rem;
-//     border-radius: 1rem;
-// 	*+*{
-// 		margin-top: 2rem;
-// 	}
-// }
