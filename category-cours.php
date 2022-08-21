@@ -2,21 +2,42 @@
 
 <section class="site__main">
     <h1>Liste de cours</h1>
-    <?php
-    if (have_posts()):
-        while(have_posts()) : the_post(); ?>
-            <h2><?php the_title(); ?></h2>
+                <article class="grille__cours">
+                <input type="radio" name="modal" id="fermer">
+                    <?php
+                    if (have_posts()):
+                        while(have_posts()) : the_post();
+                        $title = get_the_title(); ?>
+                            
+                            <div>
 
-    <p>
-        <?= wp_trim_words(get_the_content(), 20, "...<a href='"
-        .get_the_permalink()
-        ."' class=button>"
-        .substr(get_the_title(), 0, 8)
-        ."</a>") ?>
-    </p>
+                                <h2><?php echo substr($title, strpos($title, '-') + 1); ?></h2>
 
-        <?php endwhile; ?>
-    <?php endif; ?>    
+                                <p>
+                                    <?php 
+                                    echo wp_trim_words(get_the_content(), 20, '...<label class="button" for="modal' . get_the_id() . '">'
+                                    .substr(get_the_title(), 0, 8)
+                                    ."</label>");
+                                    ?>
+
+                                </p>
+
+                                <input type="radio" name="modal" class="modal__checkbox" id="modal<?= get_the_id(); ?>">
+                                <article class="modal__article">
+                                    <label for="fermer" class="modal__fermer"></label>
+                                    <div>
+                                        <?= get_the_content() ?>
+                                    </div>
+                                </article>
+
+                                <footer>
+                                    departement
+                                </footer>
+                            </div>
+
+                        <?php endwhile; ?>
+                    <?php endif; ?>  
+            </article>
 </section>
 
 <?php get_footer(); ?>

@@ -1,16 +1,33 @@
 .blocs__horizontaux {
     gap: 2rem;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(18rem, 25rem));
+    grid-template-columns: repeat(auto-fill, minmax(13rem, 20rem));
     
     article {
+        position: relative;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         border: 1px solid #aaa;
         border-radius: 1rem;
         overflow: hidden;
+        transition: transform .2s ease-in;
 
+        &:hover{
+            transform: scale(1.025);
+        }
+
+        a:after{
+            content: '';
+            position: absolute;
+            inset: 0;
+        }
+        
+        h2, h3{
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
     h2{
         margin-top: 0;
     text-align: center;
@@ -18,10 +35,11 @@
     }
     h3{
         padding: 0.5rem;
+    height: 2.5rem;
     }
     img{
         display: block;
-        height: 15rem;
+        height: 12rem;
         width: 100%;
         object-fit: cover;
     }
@@ -30,6 +48,7 @@
         padding: 0.2rem 1rem;
     font-size: 1em;
     background-color: #efece6;
+    height: 4rem;
     }
 
 }
