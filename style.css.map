@@ -20,7 +20,7 @@
         "sass/base/elements/_fields.scss",
         "sass/composante/_nav_sidebar.scss",
         "sass/composante/_nav_accueil.scss",
-        "sass/composante/_blocs__horizontaux.scss",
+        "sass/composante/_blocs_horizontaux.scss",
         "sass/layout/_sidebar-content.scss"
     ],
     "names": [],
