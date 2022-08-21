@@ -531,10 +531,6 @@ input[type="submit"]:focus {
   border-color: #aaa #bbb #bbb;
 }
 
-input[type="checkbox"], input[type="radio"] {
-  display: none;
-}
-
 input[type="text"],
 input[type="email"],
 input[type="url"],
