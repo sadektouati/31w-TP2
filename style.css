@@ -729,6 +729,7 @@ textarea {
   gap: 2rem;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(13rem, 20rem));
+  margin-top: 3rem;
 }
 
 .blocs__horizontaux article {
@@ -956,7 +957,7 @@ textarea {
   }
 }
 
-.grille__cours > div p {
+.grille__cours > div > p {
   font-size: 1.1rem;
   line-height: 1.5;
   display: flex;
@@ -965,12 +966,12 @@ textarea {
 }
 
 @media screen and (min-width: 700px) {
-  .grille__cours > div p {
+  .grille__cours > div > p {
     height: 11rem;
   }
 }
 
-.grille__cours > div p .button {
+.grille__cours > div > p .button {
   display: block;
   width: max-content;
   padding: 0.25rem 1rem;
@@ -983,7 +984,7 @@ textarea {
   cursor: pointer;
 }
 
-.grille__cours > div p .button:hover {
+.grille__cours > div > p .button:hover {
   background-color: #011f71;
   color: whitesmoke;
 }
@@ -992,7 +993,7 @@ textarea {
   position: fixed;
   left: 50%;
   top: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%) scale(0);
   z-index: 999;
   width: 40rem;
   max-width: 100vw;
@@ -1000,7 +1001,7 @@ textarea {
   max-height: 100vh;
   pointer-events: none;
   opacity: 0;
-  transition: opacity .5s ease-in-out;
+  transition: all .5s ease-in-out;
   background: white;
   padding: 0 2rem 3rem 2rem;
   font-size: 1.25rem;
@@ -1015,6 +1016,10 @@ textarea {
 
 .modal__article > div::-webkit-scrollbar {
   display: none;
+}
+
+.modal__article > div > p + p {
+  margin: 1rem 0 0 0;
 }
 
 .modal__article .modal__fermer {
@@ -1032,9 +1037,6 @@ textarea {
 .modal__checkbox:checked + .modal__article {
   pointer-events: all;
   opacity: 1;
-}
-
-#wpadminbar {
-  display: none;
+  transform: translate(-50%, -50%) scale(1);
 }
 /*# sourceMappingURL=style.css.map */

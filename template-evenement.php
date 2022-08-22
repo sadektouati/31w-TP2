@@ -30,7 +30,9 @@
             if (!empty($image)) : ?>
                 <img src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
             <?php endif ?>
+
         </article>
     <?php endif ?>
+    
 </main>
 <?php get_footer(); ?>

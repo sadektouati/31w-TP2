@@ -1,6 +1,5 @@
 <?php 
     $descCours  = get_the_content();
-    $departement = get_field( "departement" );
 ?>
                             
     <div>
@@ -37,6 +36,6 @@
         </article>
 
         <footer>
-            departement: <?php echo $departement; ?>
+            departement: <?php echo the_field( "department" ) ?>
         </footer>
     </div>
