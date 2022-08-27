@@ -36,6 +36,6 @@
         </article>
 
         <footer>
-            departement: <?php echo the_field( "department" ) ?>
+            département: <?php echo the_field( "department" ) ?>
         </footer>
     </div>
