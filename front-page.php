@@ -19,6 +19,16 @@
             <?php endwhile; ?>
         <?php endif; ?>   
     </div>
+
+    <h2>Département</h2>
+    <?php wp_nav_menu(array(
+                'menu' => 'departement',
+                'container' => 'nav'
+
+            ));
+            ?>
+    
+    <h2>Evenements</h2>
     <?php wp_nav_menu(array(
                 'menu' => 'menu accueil',
                 'container' => 'nav'
