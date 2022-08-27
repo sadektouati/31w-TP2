@@ -1,12 +1,14 @@
 
 .site {
 	display: grid;
+	grid-template-rows: auto 1fr auto;
 	gap: 0;
 	grid-template-areas:
 		"header"
 		"main"
 		"sidebar"
 		"footer";
+	height: 100vh;
 
 		@media screen and (min-width: 768px) {
 				grid-template-columns: ($size__site-sidebar) auto;
@@ -252,10 +254,7 @@
     transform: translate(-50%, -50%) scale(1);
 }
 
+.not_found{
+	color: orange;
+}
 // @import "no-sidebar";
-
-
-
-// #wpadminbar{
-// 	display: none;
-// }

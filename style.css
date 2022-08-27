@@ -1,7 +1,7 @@
 /*! 
 Theme Name: TP2 
 Author: Touati Saddek
-Author URI: http://github.com/sadektouati
+Author URI: https://github.com/sadektouati/31w-TP2
 Description: Theme pour le TP 2...
 Version: 1.2.0
 Tested up to: 5.4
@@ -218,9 +218,9 @@ select {
  * Correct the inability to style clickable types in iOS and Safari.
  */
 button,
-[type="button"],
-[type="reset"],
-[type="submit"] {
+[type=button],
+[type=reset],
+[type=submit] {
   -webkit-appearance: button;
 }
 
@@ -228,9 +228,9 @@ button,
  * Remove the inner border and padding in Firefox.
  */
 button::-moz-focus-inner,
-[type="button"]::-moz-focus-inner,
-[type="reset"]::-moz-focus-inner,
-[type="submit"]::-moz-focus-inner {
+[type=button]::-moz-focus-inner,
+[type=reset]::-moz-focus-inner,
+[type=submit]::-moz-focus-inner {
   border-style: none;
   padding: 0;
 }
@@ -239,9 +239,9 @@ button::-moz-focus-inner,
  * Restore the focus styles unset by the previous rule.
  */
 button:-moz-focusring,
-[type="button"]:-moz-focusring,
-[type="reset"]:-moz-focusring,
-[type="submit"]:-moz-focusring {
+[type=button]:-moz-focusring,
+[type=reset]:-moz-focusring,
+[type=submit]:-moz-focusring {
   outline: 1px dotted ButtonText;
 }
 
@@ -285,8 +285,8 @@ textarea {
  * 1. Add the correct box sizing in IE 10.
  * 2. Remove the padding in IE 10.
  */
-[type="checkbox"],
-[type="radio"] {
+[type=checkbox],
+[type=radio] {
   box-sizing: border-box;
   padding: 0;
 }
@@ -294,8 +294,8 @@ textarea {
 /**
  * Correct the cursor style of increment and decrement buttons in Chrome.
  */
-[type="number"]::-webkit-inner-spin-button,
-[type="number"]::-webkit-outer-spin-button {
+[type=number]::-webkit-inner-spin-button,
+[type=number]::-webkit-outer-spin-button {
   height: auto;
 }
 
@@ -303,7 +303,7 @@ textarea {
  * 1. Correct the odd appearance in Chrome and Safari.
  * 2. Correct the outline style in Safari.
  */
-[type="search"] {
+[type=search] {
   -webkit-appearance: textfield;
   outline-offset: -2px;
 }
@@ -311,7 +311,7 @@ textarea {
 /**
  * Remove the inner padding in Chrome and Safari on macOS.
  */
-[type="search"]::-webkit-search-decoration {
+[type=search]::-webkit-search-decoration {
   -webkit-appearance: none;
 }
 
@@ -482,19 +482,15 @@ table {
 a {
   color: #4169e1;
 }
-
 a:visited {
   color: #800080;
 }
-
 a:hover, a:focus, a:active {
   color: #191970;
 }
-
 a:focus {
   outline: thin dotted;
 }
-
 a:hover, a:active {
   outline: 0;
 }
@@ -502,9 +498,9 @@ a:hover, a:active {
 /* Forms
 --------------------------------------------- */
 button,
-input[type="button"],
-input[type="reset"],
-input[type="submit"] {
+input[type=button],
+input[type=reset],
+input[type=submit] {
   border: 1px solid;
   border-color: #ccc #ccc #bbb;
   border-radius: 3px;
@@ -513,65 +509,62 @@ input[type="submit"] {
   line-height: 1;
   padding: 0.6em 1em 0.4em;
 }
-
 button:hover,
-input[type="button"]:hover,
-input[type="reset"]:hover,
-input[type="submit"]:hover {
+input[type=button]:hover,
+input[type=reset]:hover,
+input[type=submit]:hover {
   border-color: #ccc #bbb #aaa;
 }
-
 button:active, button:focus,
-input[type="button"]:active,
-input[type="button"]:focus,
-input[type="reset"]:active,
-input[type="reset"]:focus,
-input[type="submit"]:active,
-input[type="submit"]:focus {
+input[type=button]:active,
+input[type=button]:focus,
+input[type=reset]:active,
+input[type=reset]:focus,
+input[type=submit]:active,
+input[type=submit]:focus {
   border-color: #aaa #bbb #bbb;
 }
 
-input[type="checkbox"], input[type="radio"] {
+input[type=checkbox], input[type=radio] {
   display: none;
 }
 
-input[type="text"],
-input[type="email"],
-input[type="url"],
-input[type="password"],
-input[type="search"],
-input[type="number"],
-input[type="tel"],
-input[type="range"],
-input[type="date"],
-input[type="month"],
-input[type="week"],
-input[type="time"],
-input[type="datetime"],
-input[type="datetime-local"],
-input[type="color"],
+input[type=text],
+input[type=email],
+input[type=url],
+input[type=password],
+input[type=search],
+input[type=number],
+input[type=tel],
+input[type=range],
+input[type=date],
+input[type=month],
+input[type=week],
+input[type=time],
+input[type=datetime],
+input[type=datetime-local],
+input[type=color],
 textarea {
   color: #666;
   border: 1px solid #ccc;
   border-radius: 3px;
   padding: 3px;
 }
-
-input[type="text"]:focus,
-input[type="email"]:focus,
-input[type="url"]:focus,
-input[type="password"]:focus,
-input[type="search"]:focus,
-input[type="number"]:focus,
-input[type="tel"]:focus,
-input[type="range"]:focus,
-input[type="date"]:focus,
-input[type="month"]:focus,
-input[type="week"]:focus,
-input[type="time"]:focus,
-input[type="datetime"]:focus,
-input[type="datetime-local"]:focus,
-input[type="color"]:focus,
+input[type=text]:focus,
+input[type=email]:focus,
+input[type=url]:focus,
+input[type=password]:focus,
+input[type=search]:focus,
+input[type=number]:focus,
+input[type=tel]:focus,
+input[type=range]:focus,
+input[type=date]:focus,
+input[type=month]:focus,
+input[type=week]:focus,
+input[type=time]:focus,
+input[type=datetime]:focus,
+input[type=datetime-local]:focus,
+input[type=color]:focus,
 textarea:focus {
   color: #111;
 }
@@ -594,17 +587,15 @@ textarea {
   left: 1rem;
   z-index: 100;
   transform: rotate(0deg);
-  transition: transform .5s;
+  transition: transform 0.5s;
   margin: 0;
   background-color: white;
 }
-
 @media screen and (min-width: 700px) {
   #burger {
     display: none;
   }
 }
-
 #burger img {
   display: block;
 }
@@ -617,11 +608,10 @@ textarea {
   top: 0;
   left: 0;
   transform: translateX(-100vw);
-  transition: transform .5s;
+  transition: transform 0.5s;
   background-color: #fff5f5;
   margin-top: 2.75rem;
 }
-
 @media screen and (min-width: 700px) {
   .menu__sidebar {
     position: static;
@@ -635,7 +625,6 @@ textarea {
 #chk-burger:checked ~ .menu__sidebar {
   transform: translateX(0);
 }
-
 @media screen and (max-width: 700px) {
   #chk-burger:checked ~ .menu__sidebar {
     box-shadow: 0 12px 14px 2px #c1c1c1;
@@ -649,22 +638,18 @@ textarea {
 .menu__sidebar__ul {
   list-style-type: none;
   margin: 0;
-  padding: .4rem 0;
+  padding: 0.4rem 0;
 }
-
 .menu__sidebar__ul .menu-item {
-  margin: .5rem 0;
+  margin: 0.5rem 0;
 }
-
 .menu__sidebar__ul .menu-item + .menu-item {
   border-top: 1px solid lightgray;
 }
-
 .menu__sidebar__ul .menu-item a {
-  padding: .5rem;
+  padding: 0.5rem;
   line-height: 1.5rem;
 }
-
 .menu__sidebar__ul .menu-item a:hover {
   background-color: white;
 }
@@ -672,11 +657,11 @@ textarea {
 /**
 * block menu de la page d'accueil
 */
-.menu-accueil-container {
+*[class$=-container] {
   margin-top: 50px;
 }
 
-.menu-accueil-container .menu {
+*[class$=-container] .menu {
   display: flex;
   justify-content: center;
   flex-flow: column;
@@ -685,40 +670,35 @@ textarea {
   background-color: #967ff9;
   gap: 2rem;
 }
-
 @media screen and (min-width: 600px) {
-  .menu-accueil-container .menu {
+  *[class$=-container] .menu {
     flex-flow: row;
   }
 }
 
-.menu-accueil-container .menu .menu-item {
+*[class$=-container] .menu .menu-item {
   list-style-type: none;
   margin: 0;
   padding: 1.5rem;
-  background-color: #f5f5f542;
+  background-color: rgba(245, 245, 245, 0.2588235294);
   border-radius: 3px;
-  transition: all .2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
-
-.menu-accueil-container .menu .menu-item:hover {
+*[class$=-container] .menu .menu-item:hover {
   background-color: wheat;
 }
-
-.menu-accueil-container .menu .menu-item a {
+*[class$=-container] .menu .menu-item a {
   text-decoration: none;
   font-size: 1.2rem;
   font-weight: 700;
   font-family: arial;
   color: #4b1b7a;
 }
-
-.menu-accueil-container .menu .menu-item a hr {
+*[class$=-container] .menu .menu-item a hr {
   margin: 0;
   background-color: #4b1b7a;
 }
-
-.menu-accueil-container .menu .menu-item a .menu-item-description {
+*[class$=-container] .menu .menu-item a .menu-item-description {
   font-size: 1rem;
   margin-top: 1rem;
   display: block;
@@ -731,7 +711,6 @@ textarea {
   grid-template-columns: repeat(auto-fill, minmax(13rem, 20rem));
   margin-top: 3rem;
 }
-
 .blocs__horizontaux article {
   position: relative;
   display: flex;
@@ -740,43 +719,36 @@ textarea {
   border: 1px solid #aaa;
   border-radius: 1rem;
   overflow: hidden;
-  transition: transform .2s ease-in;
+  transition: transform 0.2s ease-in;
 }
-
 .blocs__horizontaux article:hover {
   transform: scale(1.025);
 }
-
 .blocs__horizontaux article a:after {
-  content: '';
+  content: "";
   position: absolute;
   inset: 0;
 }
-
 .blocs__horizontaux article h2, .blocs__horizontaux article h3 {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 }
-
 .blocs__horizontaux article h2 {
   margin-top: 0;
   text-align: center;
   padding: 1rem;
 }
-
 .blocs__horizontaux article h3 {
   padding: 0.5rem;
   height: 2.5rem;
 }
-
 .blocs__horizontaux article img {
   display: block;
   height: 12rem;
   width: 100%;
   object-fit: cover;
 }
-
 .blocs__horizontaux article p {
   padding: 0.2rem 1rem;
   font-size: 1em;
@@ -791,17 +763,17 @@ textarea {
 --------------------------------------------------------------*/
 .site {
   display: grid;
+  grid-template-rows: auto 1fr auto;
   gap: 0;
   grid-template-areas: "header" "main" "sidebar" "footer";
+  height: 100vh;
 }
-
 @media screen and (min-width: 768px) {
   .site {
     grid-template-columns: 20rem auto;
     grid-template-areas: "header header" "sidebar main" "footer footer";
   }
 }
-
 .site > * {
   padding: 2rem;
 }
@@ -811,16 +783,13 @@ textarea {
   padding-inline: 3rem;
   background-color: #f6f6f6;
 }
-
 .site__header > * + * {
   margin-top: 1rem;
 }
-
 .site__header a {
   color: orangered;
   font-size: 1.5rem;
 }
-
 .site__header h2 {
   margin-top: 1rem;
   border-bottom: 2px solid orangered;
@@ -831,17 +800,14 @@ textarea {
   grid-area: sidebar;
   background-color: #ede9fe;
 }
-
 .site__sidebar p {
   font-size: 1rem;
 }
-
 .site__sidebar .menu__sidebar__ul {
   padding: 0;
   margin: 0;
   list-style: none;
 }
-
 .site__sidebar .menu__sidebar__ul a {
   padding: 0.5rem 1rem;
   display: block;
@@ -854,16 +820,13 @@ textarea {
   text-decoration: none;
   font-weight: 600;
 }
-
 .site__sidebar .menu__sidebar__ul a hr {
   margin: 0.25rem 0 0.5rem;
 }
-
 .site__sidebar .menu__sidebar__ul a span {
   font: initial;
   font-size: 1rem;
 }
-
 @media screen and (min-width: 700px) {
   .site__sidebar .menu__sidebar__ul a {
     background-color: #afafe1;
@@ -879,48 +842,39 @@ textarea {
 .site__main {
   background-color: #fffbf5;
 }
-
 .site__main h1 {
   color: #57578f;
-  grid-column: 1 / -1;
+  grid-column: 1/-1;
 }
-
 .site__main h2 {
   margin-top: 3rem;
   color: gray;
   border-bottom: 1px solid;
   font-size: 1.75rem;
 }
-
 .site__main h2 a {
   text-decoration: none;
   color: orangered;
   font-family: arial;
 }
-
 .site__main h3 {
   font-size: 1.25rem;
   color: gray;
 }
-
 .site__main p {
   font-size: 1.1rem;
   line-height: 1.5;
 }
-
 .site__main p + p {
   margin-top: 2rem;
 }
-
 .site__main .button {
-  margin-inline-start: .75rem;
+  margin-inline-start: 0.75rem;
   color: #4169e1;
 }
-
 .site__main .button:hover {
   color: #191970;
 }
-
 .site__main .image_article {
   max-width: 40rem;
   margin: 2rem auto;
@@ -933,30 +887,26 @@ textarea {
   gap: 2rem;
   margin-top: 3rem;
 }
-
 .grille__cours > div {
   padding: 1rem;
   gap: 1rem;
   display: flex;
   flex-flow: column;
   background: #fff8f0;
-  border: 1px solid #ffa50080;
+  border: 1px solid rgba(255, 165, 0, 0.5019607843);
   border-radius: 5px;
-  box-shadow: 0px 0 9px 1px #0000000f;
+  box-shadow: 0px 0 9px 1px rgba(0, 0, 0, 0.0588235294);
 }
-
 .grille__cours > div h2 {
   margin: 0;
   overflow: hidden;
   font-size: 1.5rem;
 }
-
 @media screen and (min-width: 1000px) {
   .grille__cours > div h2 {
     height: 4rem;
   }
 }
-
 .grille__cours > div > p {
   font-size: 1.1rem;
   line-height: 1.5;
@@ -964,18 +914,16 @@ textarea {
   flex-flow: column;
   justify-content: space-between;
 }
-
 @media screen and (min-width: 700px) {
   .grille__cours > div > p {
     height: 11rem;
   }
 }
-
 .grille__cours > div > p .button {
   display: block;
   width: max-content;
   padding: 0.25rem 1rem;
-  background: #315eff38;
+  background: rgba(49, 94, 255, 0.2196078431);
   color: #002ba5;
   text-decoration: none;
   font-family: arial;
@@ -983,7 +931,6 @@ textarea {
   margin: 1rem auto;
   cursor: pointer;
 }
-
 .grille__cours > div > p .button:hover {
   background-color: #011f71;
   color: whitesmoke;
@@ -1001,27 +948,23 @@ textarea {
   max-height: 100vh;
   pointer-events: none;
   opacity: 0;
-  transition: all .5s ease-in-out;
+  transition: all 0.5s ease-in-out;
   background: white;
   padding: 0 2rem 3rem 2rem;
   font-size: 1.25rem;
   line-height: 1.65;
 }
-
 .modal__article > div {
   width: 100%;
   height: calc(100% - 4rem);
   overflow: scroll;
 }
-
 .modal__article > div::-webkit-scrollbar {
   display: none;
 }
-
 .modal__article > div > p + p {
   margin: 1rem 0 0 0;
 }
-
 .modal__article .modal__fermer {
   background-image: url(https://s2.svgbox.net/materialui.svg?ic=close);
   background-size: contain;
@@ -1030,7 +973,7 @@ textarea {
   width: 2.25rem;
   display: block;
   border-radius: 0.51rem;
-  margin: 1rem 0 .5rem auto;
+  margin: 1rem 0 0.5rem auto;
   cursor: pointer;
 }
 
@@ -1039,4 +982,7 @@ textarea {
   opacity: 1;
   transform: translate(-50%, -50%) scale(1);
 }
-/*# sourceMappingURL=style.css.map */
+
+.not_found {
+  color: orange;
+}/*# sourceMappingURL=style.css.map */

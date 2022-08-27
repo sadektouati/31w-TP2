@@ -1,6 +1,6 @@
 <?php get_header(); ?> 
 <section class="site__main">
-    <h1>Mon modèle Wordpress TP#2</h1>
+    <h1>Venez étudier chez nous</h1>
     <div class="blocs__horizontaux">
     <?php
         if (have_posts()):
@@ -20,8 +20,10 @@
         <?php endif; ?>   
     </div>
 
-    <h2>Département</h2>
-    <?php wp_nav_menu(array(
+    <h2>Département</h2>    
+    <?php 
+    /* -------------------------------------- menu departement */
+    wp_nav_menu(array(
                 'menu' => 'departement',
                 'container' => 'nav'
 
@@ -29,8 +31,10 @@
             ?>
     
     <h2>Evenements</h2>
-    <?php wp_nav_menu(array(
-                'menu' => 'menu accueil',
+    <?php
+      /* -------------------------------------- menu évènements */
+    wp_nav_menu(array(
+                'menu' => 'accueil',
                 'container' => 'nav'
 
             ));
