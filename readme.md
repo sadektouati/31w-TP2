@@ -1,8 +1,8 @@
-# Exe - 4
+# TP 2
 ## thème Wordpress
 ### Contient plusieurs commits
 
-Lien (https://github.com/sadektouati/31w-TP2/tree/tp2)
+GitHub Page: (https://sadektouati.github.io/31w-TP2/)
 
 > Le thème conient 8 fichiers et le readme file:
   index.php
@@ -12,7 +12,11 @@ Lien (https://github.com/sadektouati/31w-TP2/tree/tp2)
   functions.php
   header.php
   footer.php
-  readme.md
+  content-cours.php
+  single-post.php
+  page.php
+  template-evenement.php
+  index.html
 
 Pour plus d'information sur la conception de thème
 [WP developper guide](https://developper.wordpress.org/theme)
